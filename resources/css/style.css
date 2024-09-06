@@ -1,0 +1,29 @@
+.btn-outline-teal {
+    border-color: #4fd1c5;
+    color: #4fd1c5;
+}
+
+.btn-outline-teal:hover {
+    background-color: #4fd1c5;
+    color: #fff;
+}
+
+.btn-outline-yellow {
+    border-color: #f6e05e;
+    color: #f6e05e;
+}
+
+.btn-outline-yellow:hover {
+    background-color: #f6e05e;
+    color: #fff;
+}
+
+.btn-outline-red {
+    border-color: #fc8181;
+    color: #fc8181;
+}
+
+.btn-outline-red:hover {
+    background-color: #fc8181;
+    color: #fff;
+}

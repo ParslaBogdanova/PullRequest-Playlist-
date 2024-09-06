@@ -8,9 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Song extends Model
 {
     use HasFactory;
-    use Sluggable;
-
-    protected $fillable = ['title', 'artist', 'genre', 'image_path'];
+    protected $fillable = ['title', 'artist', 'genre', 'image_path', 'playlist_id'];
 
     public function user()
     {

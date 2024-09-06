@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Playlist;
+use App\Models\Song;
 use Illuminate\Http\Request;
 
 class PlaylistController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        return view('playlist.index');
+        $playlists = Playlist::all();
+        return view('playlist.index', ['playlists' => $playlists]);
     }
 
     /**
@@ -20,7 +19,7 @@ class PlaylistController extends Controller
      */
     public function create()
     {
-        return view('create');
+        return view('playlist.create');
     }
 
     /**
@@ -34,9 +33,10 @@ class PlaylistController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Playlist $playlist)
+    public function show($id)
     {
-        //
+        $playlist = Playlist::with('songs')->findOrFail($id);
+        return view('playlists.show', compact('playlist'));
     }
 
     /**

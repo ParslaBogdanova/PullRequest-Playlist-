@@ -8,9 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class playlist extends Model
 {
     use HasFactory;
-    use Sluggable;
-
-    protected $fillable = ['name', 'tag','image_path'];
+    protected $fillable = ['id', 'name', 'tag','image_path'];
 
     public function user()
     {

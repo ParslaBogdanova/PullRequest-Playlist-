@@ -14,6 +14,15 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+    <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+    <div id="app">
+        <header class="bg-gray-800 py-6">
+            <div class="container mx-auto flex justify-between items-center px-6">
+                <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
+                    <a class="no-underline hover:underline" href="/">Home</a>
+
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             @include('layouts.navigation')
@@ -28,9 +37,6 @@
             @endisset
 
             <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
         </div>
     </body>
 </html>

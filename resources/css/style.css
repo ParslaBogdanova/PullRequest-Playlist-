@@ -1,29 +1,25 @@
-.btn-outline-teal {
-    border-color: #4fd1c5;
-    color: #4fd1c5;
+/* Ensure full-height sidebar */
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.btn-outline-teal:hover {
-    background-color: #4fd1c5;
-    color: #fff;
+.container-fluid {
+    display: flex;
+    height: 100vh;
+    padding: 0;
 }
 
-.btn-outline-yellow {
-    border-color: #f6e05e;
-    color: #f6e05e;
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25%; /* Adjust as needed */
+    overflow-y: auto;
 }
 
-.btn-outline-yellow:hover {
-    background-color: #f6e05e;
-    color: #fff;
-}
-
-.btn-outline-red {
-    border-color: #fc8181;
-    color: #fc8181;
-}
-
-.btn-outline-red:hover {
-    background-color: #fc8181;
-    color: #fff;
+main {
+    margin-left: 25%; /* Adjust to match the width of the sidebar */
+    padding: 20px;
 }

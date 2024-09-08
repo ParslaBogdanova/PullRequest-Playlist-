@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Song;
 use Illuminate\Http\Request;
 
-class songController extends Controller
+class SongController extends Controller
 {
     /**
      * Display a listing of the resource.
